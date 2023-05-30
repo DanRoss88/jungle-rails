@@ -1,7 +1,7 @@
 <section class="cart-show">
- <% if flash[:notice] %>
+ <% if flash.now[:notice] %>
   <div class="alert alert-success">
-    <%= flash[:notice] %>
+    <%= flash.now[:notice] %>
     <%= link_to "Home Page", root_path, class: "btn btn-success" %>
   </div>
 <% else %>
