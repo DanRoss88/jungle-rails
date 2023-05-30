@@ -22,8 +22,8 @@ class OrdersController < ApplicationController
   private
 
   def empty_cart!
-    # empty hash means no products in cart :)
     update_cart({})
+    cookies.delete(:cart)
   end
 
   def perform_stripe_charge

@@ -2,7 +2,7 @@ class CartsController < ApplicationController
 
   def show
     if cart.empty?
-      flash[:notice] = "Looks like your cart is empty, continue shopping here :)"
+      flash.now[:notice] = "Looks like your cart is empty, continue shopping here :)"
     end
   end
 

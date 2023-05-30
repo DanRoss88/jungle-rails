@@ -1,5 +1,4 @@
 <section class="orders-show">
-
   <header class="page-header">
     <h1>Order #<%= @order.id %></h1>
   </header>
@@ -8,6 +7,32 @@
     <h4>Thank you for your order!</h4>
   </div>
 
-  <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
+  <div class="order-details">
+    <h3>Order Details</h3>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @order.line_items.each do |line_item| %>
+          <%= render 'line_item', line_item: line_item %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 
+  <div class="order-total">
+    <h4>Total Amount: $<%= @order.total_cents / 100.0 %></h4>
+  </div>
+
+  <div class="order-email">
+    <p>Email: <%= @order.email %></p>
+  </div>
+
+  <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 </section>
