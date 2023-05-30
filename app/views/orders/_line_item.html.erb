@@ -8,14 +8,7 @@
     <p><%= line_item.product.description %></p>
   </td>
   <td>
-    $<%= line_item.item_price %>
-  </td>
-  <td>
-    <div>
-      <%= button_to remove_item_cart_path(product_id: line_item.product.id), class: 'btn btn-xs btn-danger' do %> - <% end %>
-      <%= line_item.quantity %>
-      <%= button_to add_item_cart_path(product_id: line_item.product.id), class: 'btn btn-xs btn-success' do %> + <% end %>
-    </div>
+    <%= line_item.quantity %>
   </td>
   <td>
     $<%= line_item.total_price %>
