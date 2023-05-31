@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root to: 'dashboard#show'
-    resources :products, except: [:edit, :update, :show], constraints: { basic_auth: true }
+    resources :categories, :products, except: [:edit, :update, :show], constraints: { basic_auth: true }
   end
 
   get '/about', to: 'about#index', as: 'about'
