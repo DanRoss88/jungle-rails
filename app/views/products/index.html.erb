@@ -14,6 +14,9 @@
   </header>
 
   <div class="products">
-    <%= render @products %>
+  <% @products.each do |product| %>
+    <%= render partial: 'product', locals: { product: product } %>
+  <% end %>
+  
   </div>
 </section>

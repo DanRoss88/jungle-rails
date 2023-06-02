@@ -1,7 +1,10 @@
 <article<% if product.quantity.zero? %> class="soldout"<% end %>>
-  <%= link_to product_path(product) do %>
-    <%= image_tag product.image.thumb.url, alt: product.name %>
+  <%= link_to product_path(product.id) do %>
+    <% if product.image.thumb.url.present? %>
+  <%= image_tag(product.image.thumb.url, alt: product.name) %>
+<% end %>
     <h1>
+    
       <span><%= product.name %></span>
       <span><%= humanized_money_with_symbol product.price %></span>
     </h1>
