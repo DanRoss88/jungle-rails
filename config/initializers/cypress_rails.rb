@@ -23,7 +23,7 @@ CypressRails.hooks.before_server_start do
     quantity: 18,
     price: 24.99
   })
-end
+end 
 
 CypressRails.hooks.after_transaction_start do
   # Called after the transaction is started (at launch and after each reset)
@@ -34,12 +34,12 @@ CypressRails.hooks.after_state_reset do
 end
 
 CypressRails.hooks.before_server_stop do
-  # Called once, at_exit
-  DatabaseCleaner.clean
-end
+  DatabaseCleaner.clean 
+end 
 
 private
 
 def open_asset(file_name)
-  File.open(Rails.root.join('db', 'seed_assets', file_name))
-end
+  
+File.open(Rails.root.join('db', 'seed_assets', file_name))
+end 

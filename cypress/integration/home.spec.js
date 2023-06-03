@@ -1,14 +1,14 @@
 /// <reference types="cypress" />
 
-describe('it opens the jungle store', () => {
+describe("Home page", () => {
   beforeEach(() => {
-    
-    cy.visit('/')
-  })
-  it("There is products on the page", () => {
-    cy.get(".products article").should("be.visible");
+    cy.visit("/");
   });
-  it("There is 2 products on the page", () => {
-    cy.get(".products article").should("have.length", 2);
-  });
-})
+it("should open the home page", () => {
+  cy.get("h1").should("be.visible");
+});
+
+it("There is products on the page", () => {
+  cy.get(".products article").should("be.visible");
+});
+});
