@@ -3,15 +3,15 @@
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 ##Screenshots
 
-![home page](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(30).png?raw=true
+![home page](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(30).png?raw=true)
 
-![About us](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(34).png?raw=true
+![About us](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(34).png?raw=true)
 
-![Admin categories](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(31).png?raw=true
+![Admin categories](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(31).png?raw=true)
 
-![Admin products](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(32).png?raw=true
+![Admin products](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(32).png?raw=true)
 
-![Sign up](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(33).png?raw=true
+![Sign up](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(33).png?raw=true)
 
 
 
