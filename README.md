@@ -1,7 +1,8 @@
 # Jungle
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
-##Screenshots
+
+## Screenshots
 
 ![home page](https://github.com/DanRoss88/jungle-rails/blob/master/docs/Screenshot%20(30).png?raw=true)
 
